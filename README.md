@@ -12,6 +12,8 @@ If you want to try the chatbot, follow the installation steps below to run it lo
 - The chat history is displayed, including both user inputs and bot responses.
 - Responsive design with a scrollable message container.
 
+![Chatbot using Node.js and Gemini AI](./screenshot.png)
+
 ## Installation
 
 ### Prerequisites
