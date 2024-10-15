@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --clr: #f7f7f7;
+    --bg-clr: radial-gradient(rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+    /* --bg-resp: radial-gradient(rgb(56, 189, 248), rgb(103, 232, 249)); */
+    --bg-resp: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-clr);
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.chat-container {
+    background: var(--bg-clr);
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .24);
+}
+
+.input-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+/*  */
+.message {
+    height: 100%;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    transition: all .5s;
+    overflow: scroll;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .24);
+    transition: all .5s;
+}
+
+input {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: .5rem;
+}
+
+.btn:hover {
+    transform: scale(.97);
+}
+
+input:focus,
+.btn:focus {
+    outline: none;
+}
+
+.response,
+.request {
+    color: #fff;
+    padding: .35rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+}
+
+.response {
+    background: var(--bg-resp);
+    margin-left: auto;
+}
+
+.request {
+    background-color: lightslategray;
+    margin-right: auto;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
